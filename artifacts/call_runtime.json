@@ -1,10 +1,10 @@
 {
   "source": {
-    "hash": "0x470372c8875798e48a9797f81afaaa21fac48e9b02d74fb13b7f7a0ccf2978d3",
+    "hash": "0x3cafd0c4dac664337398277db21028ab95acc3505c382bcec1b1fa98dd83e56a",
     "language": "ink! 4.2.1",
     "compiler": "rustc 1.69.0",
     "build_info": {
-      "build_mode": "Debug",
+      "build_mode": "Release",
       "cargo_contract_version": "3.0.1",
       "rust_toolchain": "stable-x86_64-apple-darwin",
       "wasm_opt_settings": {
@@ -102,6 +102,41 @@
           "type": 3
         },
         "selector": "0x9a0ab1c6"
+      },
+      {
+        "args": [
+          {
+            "label": "receiver",
+            "type": {
+              "displayName": [
+                "AccountId"
+              ],
+              "type": 6
+            }
+          },
+          {
+            "label": "value",
+            "type": {
+              "displayName": [
+                "Balance"
+              ],
+              "type": 9
+            }
+          }
+        ],
+        "default": false,
+        "docs": [],
+        "label": "transfer_through_runtime",
+        "mutates": true,
+        "payable": false,
+        "returnType": {
+          "displayName": [
+            "ink",
+            "MessageResult"
+          ],
+          "type": 3
+        },
+        "selector": "0x18fee96b"
       }
     ]
   },
